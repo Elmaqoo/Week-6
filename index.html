@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta>
+    <meta charset="UTF-8">
+    <title>Hello World in Vue.js</title>
+  </meta>
+
+  <body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.10/dist/vue.js"></script>
+   
+    <div id="input">
+      <p>Input Your Name:</p>
+      <input type="text" v-model="name">
+      <p>Input Your Age:</p>
+      <input type="text" v-model="age">
+
+    <div>Gender: {{ gender }}</div>
+
+    <input type="radio" id="female" value="Female" v-model="gender" />
+    <label for="female">Female</label>
+
+    <input type="radio" id="male" value="Male" v-model="gender" />
+    <label for="male">Male</label>
+
+    <input type="radio" id="na" value="Not Applicable" v-model="gender" />
+    <label for="na">Not Applicable</label>
+    <p>Your Name is {{ name}} and you are {{ age}} years old. Gender is {{ gender}}.</p>
+    </div>
+
+    
+
+    <script src="./main.js"></script>
+
+  </body>
+</html>
+    
